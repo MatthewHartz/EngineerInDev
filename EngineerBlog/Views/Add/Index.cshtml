@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Add Page";
+}
+
+<div ng-controller="AddCtrl">
+    <form novalidate>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control"
+                   ng-model="title">
+        </div>
+        <div class="form-group">
+            <label>Content</label>
+            <div text-angular ng-model="content"></div>
+        </div>
+        <div class="form-group">
+            <label>Tags</label>
+            <input type="text" class="form-control" 
+                   ng-model="tags">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="submitBlog()">Submit</button>
+    </form>
+</div>
+
+

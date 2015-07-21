@@ -1,0 +1,209 @@
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\obj\Debug\EngineerBlog.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.dll.config
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.pdb
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Antlr3.Runtime.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.Core.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EntityFramework.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Data.Edm.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Data.OData.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Newtonsoft.Json.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Spatial.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Helpers.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Http.OData.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Mvc.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Optimization.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Razor.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.WebPages.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\WebGrease.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\WebMatrix.Data.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\WebMatrix.WebData.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EntityFramework.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Newtonsoft.Json.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Helpers.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Mvc.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Razor.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.WebPages.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\WebMatrix.Data.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\WebMatrix.WebData.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.Core.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Http.OData.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Data.Edm.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Data.OData.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Spatial.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\de\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\es\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\fr\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\it\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ja\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ko\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\ru\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\obj\Debug\EngineerBlog.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\obj\Debug\EngineerBlog.pdb
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Owin.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Owin.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Net.Http.Formatting.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Http.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Http.WebHost.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Microsoft.Owin.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Net.Http.Formatting.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Http.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\System.Web.Http.WebHost.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.Services.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.Dto.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\AutoMapper.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.Data.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.Services.pdb
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.Dto.pdb
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\AutoMapper.pdb
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\AutoMapper.xml
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog\bin\EngineerBlog.Data.pdb
+C:\Users\Matthew\documents\visual studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Nest.dll
+C:\Users\Matthew\documents\visual studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Elasticsearch.Net.dll
+C:\Users\Matthew\documents\visual studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Nest.pdb
+C:\Users\Matthew\documents\visual studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Nest.xml
+C:\Users\Matthew\documents\visual studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Elasticsearch.Net.pdb
+C:\Users\Matthew\documents\visual studio 2013\Projects\EngineerBlog\EngineerBlog\bin\Elasticsearch.Net.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\AutoMapper.Net4.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.dll.config
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Antlr3.Runtime.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.Core.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.Services.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EntityFramework.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Data.Edm.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Data.OData.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Owin.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Newtonsoft.Json.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Owin.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Net.Http.Formatting.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Spatial.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Helpers.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Http.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Http.OData.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Http.WebHost.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Mvc.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Optimization.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Razor.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.WebPages.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\WebGrease.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\WebMatrix.Data.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\WebMatrix.WebData.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.Data.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.Dto.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\AutoMapper.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Nest.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Elasticsearch.Net.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.Services.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Owin.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Newtonsoft.Json.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Net.Http.Formatting.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Http.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Http.WebHost.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EntityFramework.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Helpers.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Mvc.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Razor.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.WebPages.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\WebMatrix.Data.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\WebMatrix.WebData.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.Core.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Web.Http.OData.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Data.Edm.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Microsoft.Data.OData.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\System.Spatial.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.Data.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\EngineerBlog.Dto.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\AutoMapper.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\AutoMapper.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Nest.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Nest.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Elasticsearch.Net.pdb
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\Elasticsearch.Net.xml
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\de\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\es\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\fr\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\it\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ja\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ko\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\ru\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\obj\Debug\EngineerBlog.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\obj\Debug\EngineerBlog.dll
+C:\Users\Matthew\Documents\GitHub\EngineerInDev\EngineerBlog\obj\Debug\EngineerBlog.pdb

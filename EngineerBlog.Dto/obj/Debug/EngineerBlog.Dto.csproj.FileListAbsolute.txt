@@ -1,0 +1,5 @@
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog.Dto\bin\Debug\EngineerBlog.Dto.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog.Dto\bin\Debug\EngineerBlog.Dto.pdb
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog.Dto\obj\Debug\EngineerBlog.Dto.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog.Dto\obj\Debug\EngineerBlog.Dto.dll
+C:\Users\Matthew\Documents\Visual Studio 2013\Projects\EngineerBlog\EngineerBlog.Dto\obj\Debug\EngineerBlog.Dto.pdb
