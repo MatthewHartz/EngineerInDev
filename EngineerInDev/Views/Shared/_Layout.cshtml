@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="/">
-        <title>@ViewBag.Title - Deploying Engineer</title>
+        <title>@ViewBag.Title</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css'>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
@@ -20,7 +20,9 @@
     <body ng-app="engineerBlog">
         <div id="SidePanel">
             <img src="~/Content/Images/Profile.jpg" id="ProfilePic" />
-            <h1 id="Title">@Html.ActionLink("Engineer in Dev", "Index", "Home")</h1>
+            <h1 id="Title">
+                <a href="/">Engineer In Dev</a>
+            </h1>
             <ul style="list-style-type: none; padding: 0;">
                 <li><a href="About">about</a></li>
                 <li><a href="Contact">contact</a></li>

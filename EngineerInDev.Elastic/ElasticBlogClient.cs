@@ -76,9 +76,10 @@ namespace EngineerInDev.Elastic
             {
                 var result = client.Search<Blog>(s => s
                     .Query(q => q
-                        .Term(p => p.Title, "About Matthew")));
-
-                return null;
+                        .Match(m => m
+                            .OnField(f => f.Title)
+                            .Query(name))));
+                return result.Documents.First();
             }
             catch (Exception e)
             {

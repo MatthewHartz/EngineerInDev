@@ -1,7 +1,7 @@
 ﻿var app = angular.module('engineerBlog', [
     'ngRoute',
-    'textAngular'
-    
+    'textAngular',
+    'angularUtils.directives.dirDisqus'
 ]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -9,6 +9,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/', {
             templateUrl: '/Home/Template/' + 'Index',
             controller: 'HomeCtrl',
+            caseInsensitiveMatch: true
         })
         .when('/Home/', {
             templateUrl: '/Home/Template/' + 'Index',
@@ -20,11 +21,22 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             caseInsensitiveMatch: true,
             controller: 'AboutCtrl'
         })
+        .when('/Blogs/:blogName', {
+            templateUrl: '/Home/Template/Blog',
+            caseInsensitiveMatch: true,
+            controller: 'BlogCtrl'
+        })
         .otherwise({
-            redirectTo: '/'
+            controller: function () {
+                window.location.replace('/');
+            },
+            template: "<div></div>"
         });
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: true
+    });
 }]);
 
 app.run(['$http', function ($http) {

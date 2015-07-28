@@ -143,7 +143,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\Scripts\Directives\" />
     <Folder Include="Content\Scripts\Filters\" />
-    <Folder Include="Content\Scripts\Plugins\TextAngular\" />
     <Folder Include="Content\Scripts\Services\" />
   </ItemGroup>
   <ItemGroup>
@@ -168,8 +167,10 @@
     <Content Include="Content\Scripts\app.js" />
     <Content Include="Content\Scripts\Controllers\AboutCtrl.js" />
     <Content Include="Content\Scripts\Controllers\AddCtrl.js" />
+    <Content Include="Content\Scripts\Controllers\BlogCtrl.js" />
     <Content Include="Content\Scripts\Controllers\HomeCtrl.js" />
     <None Include="Content\Scripts\Plugins\jquery-1.8.2.intellisense.js" />
+    <Content Include="Content\Scripts\Plugins\dirDisqus.js" />
     <Content Include="Content\Scripts\Plugins\jquery-1.8.2.js" />
     <Content Include="Content\Scripts\Plugins\jquery-1.8.2.min.js" />
     <Content Include="Content\Scripts\Plugins\jquery-ui-1.8.24.js" />
@@ -245,7 +246,9 @@
     <Content Include="Content\Themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -260,6 +263,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EngineerInDev.Elastic\EngineerInDev.Elastic.csproj">

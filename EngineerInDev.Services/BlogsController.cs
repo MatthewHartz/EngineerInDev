@@ -42,12 +42,12 @@ namespace EngineerInDev.Services
         /// Gets the blog.
         /// </summary>
         /// <returns></returns>
-        [Route("blogs/{blogName}")]
+        [Route("blogs")]
         [HttpGet]
-        public BlogDto GetBlog(string blogName)
+        public BlogDto GetBlog(string name)
         {
             // Get the specific blog
-            var blog = _client.GetLatestBlog();
+            var blog = _client.GetBlog(name);
 
             //Create the mapping between blog and blogdto
             Mapper.CreateMap<Blog, BlogDto>();

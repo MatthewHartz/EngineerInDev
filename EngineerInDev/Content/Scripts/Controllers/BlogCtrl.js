@@ -1,8 +1,8 @@
-﻿app.controller('HomeCtrl', ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
+﻿app.controller('BlogCtrl', ['$scope', '$http', '$sce', '$routeParams', function ($scope, $http, $sce, $routeParams) {
     $scope.blog = {};
 
-    $scope.init = function() {
-        $http.get('/api/blogs/newest')
+    $scope.init = function () {
+        $http.get('/api/blogs?name=' + $routeParams.blogName)
             .success(function (blog) {
                 $scope.blog = blog;
                 $scope.blog['htmlBody'] = $sce.trustAsHtml(blog.content);

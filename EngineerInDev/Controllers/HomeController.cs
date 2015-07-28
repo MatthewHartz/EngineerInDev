@@ -23,6 +23,8 @@ namespace EngineerInDev.Controllers
                     return PartialView("~/Views/Home/Aboutme.cshtml");
                 case "index":
                     return PartialView("~/Views/Home/Home.cshtml");
+                case "blog":
+                    return PartialView("~/Views/Home/Blog.cshtml");
                 default:
                     throw new Exception("template not known");
             }
