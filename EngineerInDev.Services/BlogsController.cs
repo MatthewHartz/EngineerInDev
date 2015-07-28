@@ -24,6 +24,33 @@ namespace EngineerInDev.Services
         /// Gets the latest blog.
         /// </summary>
         /// <returns></returns>
+        [Route("blogs/archive")]
+        [HttpGet]
+        public List<object> GetArchivedBlogs()
+        {
+            // Get first blog
+            var blogs = _client.GetAllBlogs();
+
+            // group blogs by month and year
+            var calendar = blogs.GroupBy(blog => blog.CreatedOn.Year,
+                                         (key, g) => new
+            {
+                Year = key,
+                Blogs = Mapper.Map<List<BlogDto>>(g.ToList().OrderByDescending(d => d.CreatedOn))
+            })
+            .OrderByDescending(d => d.Year).ToList();
+
+            //Create the mapping between blog and blogdto
+            Mapper.CreateMap<Blog, BlogDto>();
+
+            // Perform the conversion
+            return new List<object>(calendar);
+        }
+
+        /// <summary>
+        /// Gets the latest blog.
+        /// </summary>
+        /// <returns></returns>
         [Route("blogs/newest")]
         [HttpGet]
         public BlogDto GetLatestBlog()

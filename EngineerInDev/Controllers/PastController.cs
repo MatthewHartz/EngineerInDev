@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace EngineerInDev.Controllers
 {
-    public class HomeController : Controller
+    public class PastController : Controller
     {
+        // GET: Past
         public ActionResult Index()
         {
             return View();

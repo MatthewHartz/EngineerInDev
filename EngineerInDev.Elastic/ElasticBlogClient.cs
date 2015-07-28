@@ -25,6 +25,7 @@ namespace EngineerInDev.Elastic
         Blog GetLatestBlog();
         Blog GetBlog(string name);
         List<Blog> SearchBlogs(string searchText);
+        List<Blog> GetAllBlogs();
     }
 
     public class ElasticBlogClient : IElasticBlogClient
@@ -57,6 +58,11 @@ namespace EngineerInDev.Elastic
             try
             {
                 var result = client.Search<Blog>(s => s
+                    .Filter(f => f
+                        .Not(n => n.Query(q => q
+                            .Match(m =>m
+                                .OnField(oN => oN.Title.ToLower())
+                                .Query("about me")))))
                     .SortDescending(sort => sort
                         .CreatedOn).Take(1));
                 return result.Documents.First();
@@ -90,6 +96,22 @@ namespace EngineerInDev.Elastic
         public List<Blog> SearchBlogs(string searchText)
         {
             return new List<Blog>();
+        }
+
+        public List<Blog> GetAllBlogs()
+        {
+            var client = GetClient();
+
+            try
+            {
+                var result = client
+                    .Search<Blog>(s => s.Query(q => q.MatchAll()));
+                return result.Documents.ToList();
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
     }
 }

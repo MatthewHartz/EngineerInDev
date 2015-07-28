@@ -17,7 +17,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             caseInsensitiveMatch: true
         })
         .when('/About/', {
-            templateUrl: '/Home/Template/About',
+            templateUrl: '/About',
             caseInsensitiveMatch: true,
             controller: 'AboutCtrl'
         })

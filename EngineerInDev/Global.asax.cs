@@ -23,14 +23,5 @@ namespace EngineerInDev
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
-
-        private const string ROOT_DOCUMENT = "/Home";
-
-        protected void Application_BeginRequest(Object sender, EventArgs e)
-        {
-            string url = Request.Url.LocalPath;
-            if (!System.IO.File.Exists(Context.Server.MapPath(url)))
-                Context.RewritePath(ROOT_DOCUMENT);
-        }
     }
 }
