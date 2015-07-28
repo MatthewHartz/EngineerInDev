@@ -16,19 +16,33 @@
         @Styles.Render("~/Content/Css")
         @Scripts.Render("~/Content/Scripts/Controllers")
         @Scripts.Render("~/Content/Scripts/Plugins")
+        @Scripts.Render("~/Content/Scripts/Directives")
     </head>
     <body ng-app="engineerBlog">
-        <div id="SidePanel">
-            <img src="~/Content/Images/Profile.jpg" id="ProfilePic" />
-            <h1 id="Title">
-                <a href="/">Engineer In Dev</a>
-            </h1>
-            <ul style="list-style-type: none; padding: 0;">
-                <li><a href="About">about</a></li>
-                <li><a href="Contact">contact</a></li>
-                <li><a href="Past">past</a></li>
-            </ul>
+        <div id="Navbar">
+            <div id="Header">
+                <div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'" scroll>
+                    <img src="~/Content/Images/Profile.jpg" id="ProfilePic" />
+                </div>
+                <h1 id="Title">
+                    <a href="/">Engineer In Dev</a>
+                </h1>
+            </div>
             <div>
+                <ul id="NavbarOptions">
+                    <li><a href="About">about</a></li>
+                    <li><a href="Contact">contact</a></li>
+                    <li><a href="Past">past</a></li>
+                </ul>
+            </div>
+            <div class="fixed-navbar" ng-show="!atTop && atTop != null">
+                <ul id="NavbarOptions">
+                    <li><a href="About">about</a></li>
+                    <li><a href="Contact">contact</a></li>
+                    <li><a href="Past">past</a></li>
+                </ul>
+            </div>
+            <div style="display: none">
                 <a class="fa fa-github fa-3x" href="https://github.com/rvbmrdonut"></a>
                 <a class="fa fa-linkedin fa-3x"></a>
                 <a class="fa fa-twitter fa-3x"></a> 

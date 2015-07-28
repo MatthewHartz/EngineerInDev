@@ -11,7 +11,6 @@ namespace EngineerInDev.Dto
         public string Author { get; set; }
         public DateTime CreatedOn { get; set; }
         public List<string> Tags { get; set; }
-        public List<CommentDto> Comments { get; set; }
         [DefaultValue(false)]
         public bool Hidden { get; set; }
     }

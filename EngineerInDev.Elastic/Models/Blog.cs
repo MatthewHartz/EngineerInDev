@@ -12,13 +12,7 @@ namespace EngineerInDev.Elastic.Models
         public string Author { get; set; }
         public DateTime CreatedOn { get; set; }
         public List<string> Tags { get; set; }
-        public List<Comment> Comments { get; set; }
         [DefaultValue(false)]
         public bool Hidden { get; set; }
-
-        public Blog()
-        {
-            Comments = new List<Comment>();
-        }
     }
 }
