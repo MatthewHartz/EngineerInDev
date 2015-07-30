@@ -1,8 +1,11 @@
-﻿app.controller('BlogCtrl', ['$scope', '$http', '$sce', '$routeParams', function ($scope, $http, $sce, $routeParams) {
+﻿app.controller('BlogCtrl', ['$scope', '$http', '$sce', '$location', '$window', function ($scope, $http, $sce, $location, $window) {
     $scope.blog = {};
 
     $scope.init = function () {
-        $http.get('/api/blogs?name=' + $routeParams.blogName)
+        // Get the blog parameter
+        var name = $location.search().name;
+
+        $http.get('/api/blogs?name=' + name)
             .success(function (blog) {
                 $scope.blog = blog;
                 $scope.blog['htmlBody'] = $sce.trustAsHtml(blog.content);
@@ -11,7 +14,7 @@
                 $scope.url = 'http://localhost:60664/#!/Blogs/' + blog.title;
                 $scope.contentLoaded = true;
             }).error(function () {
-                var test = '';
+                $window.location.href = '/';
             });
     };
 

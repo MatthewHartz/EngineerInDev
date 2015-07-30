@@ -18,10 +18,10 @@
         @Scripts.Render("~/Content/Scripts/Plugins")
         @Scripts.Render("~/Content/Scripts/Directives")
     </head>
-    <body ng-app="engineerBlog">
+    <body ng-app="engineerBlog" scroll>
         <div id="Navbar">
             <div id="Header">
-                <div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'" scroll>
+                <div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'">
                     <img src="~/Content/Images/Profile.jpg" id="ProfilePic" />
                 </div>
                 <h1 id="Title">
@@ -30,16 +30,9 @@
             </div>
             <div>
                 <ul id="NavbarOptions">
-                    <li><a href="About">about</a></li>
-                    <li><a href="Contact">contact</a></li>
-                    <li><a href="Past">past</a></li>
-                </ul>
-            </div>
-            <div class="fixed-navbar" ng-show="!atTop && atTop != null">
-                <ul id="NavbarOptions">
-                    <li><a href="About">about</a></li>
-                    <li><a href="Contact">contact</a></li>
-                    <li><a href="Past">past</a></li>
+                    <li><a target="_self" href="About">about</a></li>
+                    <li><a target="_self" href="Contact">contact</a></li>
+                    <li><a target="_self" href="Past">past</a></li>
                 </ul>
             </div>
             <div style="display: none">
@@ -48,6 +41,13 @@
                 <a class="fa fa-twitter fa-3x"></a> 
             </div>
             <div id="CopyRight">&copy; @DateTime.Now.Year - Matthew Hartz</div>
+        </div>
+        <div class="fixed-navbar" ng-show="!atTop && atTop != null" ng-cloak>
+            <ul id="NavbarOptions">
+                <li><a target="_self" href="About">about</a></li>
+                <li><a target="_self" href="Contact">contact</a></li>
+                <li><a target="_self" href="Past">past</a></li>
+            </ul>
         </div>
         <div id="Content">
             @RenderBody()

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -71,16 +73,19 @@ namespace EngineerInDev.Services
         /// <returns></returns>
         [Route("blogs")]
         [HttpGet]
-        public BlogDto GetBlog(string name)
+        public HttpResponseMessage GetBlog(string name)
         {
             // Get the specific blog
             var blog = _client.GetBlog(name);
 
+            if (blog == null)
+                return new HttpResponseMessage(HttpStatusCode.NotFound);
+ 
             //Create the mapping between blog and blogdto
             Mapper.CreateMap<Blog, BlogDto>();
 
             // Perform the conversion
-            return Mapper.Map<BlogDto>(blog);
+            return Request.CreateResponse(HttpStatusCode.OK, Mapper.Map<BlogDto>(blog));
         }
 
         /// <summary>
@@ -88,6 +93,7 @@ namespace EngineerInDev.Services
         /// </summary>
         [Route("blogs")]
         [HttpPost]
+        [BasicAuthenticationAttribute("rvbmrdonut", "My Password For Engineer In Dev1", BasicRealm = "EngineerInDev")]
         public void PostBlog([FromBody]BlogDto blog)
         {
             //Create the mapping between blog and blogdto

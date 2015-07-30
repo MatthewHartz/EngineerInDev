@@ -153,6 +153,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AddController.cs" />
+    <Compile Include="Controllers\BlogsController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PastController.cs" />
@@ -269,6 +270,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Past\Index.cshtml" />
+    <Content Include="Views\Blogs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EngineerInDev.Elastic\EngineerInDev.Elastic.csproj">

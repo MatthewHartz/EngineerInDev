@@ -2,12 +2,14 @@
     ViewBag.Title = "Home Page";
 }
 
-<div ng-controller="PastCtrl">
-    <h1>Archive</h1>
+<div ng-controller="PastCtrl" ng-cloak>
+    <h1 class="BlogTitle">Archive</h1>
     <fieldset ng-repeat="year in archive track by $index">
         <legend>{{year.year}}</legend>
         <ul>
-            <li ng-repeat="blog in year.blogs">{{blog.title}}</li>
+            <li ng-repeat="blog in year.blogs">
+                <a href="/blogs/?name={{blog.title}}">{{blog.title}}</a>
+            </li>
         </ul>
     </fieldset>
 </div>

@@ -7,24 +7,9 @@
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/Home/Template/' + 'Index',
+            templateUrl: '/Home',
             controller: 'HomeCtrl',
             caseInsensitiveMatch: true
-        })
-        .when('/Home/', {
-            templateUrl: '/Home/Template/' + 'Index',
-            controller: 'HomeCtrl',
-            caseInsensitiveMatch: true
-        })
-        .when('/About/', {
-            templateUrl: '/About',
-            caseInsensitiveMatch: true,
-            controller: 'AboutCtrl'
-        })
-        .when('/Blogs/:blogName', {
-            templateUrl: '/Home/Template/Blog',
-            caseInsensitiveMatch: true,
-            controller: 'BlogCtrl'
         })
         .otherwise({
             controller: function () {
