@@ -17,6 +17,9 @@ namespace EngineerInDev
             bundles.Add(new ScriptBundle("~/Content/Scripts/Directives")
                 .IncludeDirectory("~/Content/Scripts/Directives", "*.js"));
 
+            bundles.Add(new ScriptBundle("~/Content/Scripts/Filters")
+                .IncludeDirectory("~/Content/Scripts/Filters", "*.js"));
+
             bundles.Add(new StyleBundle("~/Content/Css")
                 .IncludeDirectory("~/Content/Css", "*.css", true));
 

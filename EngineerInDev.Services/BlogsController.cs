@@ -42,9 +42,6 @@ namespace EngineerInDev.Services
             })
             .OrderByDescending(d => d.Year).ToList();
 
-            //Create the mapping between blog and blogdto
-            Mapper.CreateMap<Blog, BlogDto>();
-
             // Perform the conversion
             return new List<object>(calendar);
         }
@@ -59,9 +56,6 @@ namespace EngineerInDev.Services
         {
             // Get first blog
             var blog = _client.GetLatestBlog();
-
-            //Create the mapping between blog and blogdto
-            Mapper.CreateMap<Blog, BlogDto>();
 
             // Perform the conversion
             return Mapper.Map<BlogDto>(blog);
@@ -80,12 +74,29 @@ namespace EngineerInDev.Services
 
             if (blog == null)
                 return new HttpResponseMessage(HttpStatusCode.NotFound);
- 
-            //Create the mapping between blog and blogdto
-            Mapper.CreateMap<Blog, BlogDto>();
 
             // Perform the conversion
             return Request.CreateResponse(HttpStatusCode.OK, Mapper.Map<BlogDto>(blog));
+        }
+
+        /// <summary>
+        /// Gets the blog.
+        /// </summary>
+        /// <returns></returns>
+        [Route("blogs/search")]
+        [HttpGet]
+        public HttpResponseMessage Search(string query)
+        {
+            // Get the specific blog
+            var results = _client.SearchBlogs(query);
+
+            if (results == null)
+                return new HttpResponseMessage(HttpStatusCode.NotFound);
+
+            // Perform the conversion
+            //return Request.CreateResponse(HttpStatusCode.OK, Mapper.Map<BlogMatchDto>(results));
+            return Request.CreateResponse(HttpStatusCode.OK,
+                Mapper.Map<List<BlogMatchDto>>(results));
         }
 
         /// <summary>
@@ -96,8 +107,6 @@ namespace EngineerInDev.Services
         [BasicAuthenticationAttribute("rvbmrdonut", "My Password For Engineer In Dev1", BasicRealm = "EngineerInDev")]
         public void PostBlog([FromBody]BlogDto blog)
         {
-            //Create the mapping between blog and blogdto
-            Mapper.CreateMap<BlogDto, Blog>();
             _client.AddBlog(Mapper.Map<Blog>(blog));
         }
     }

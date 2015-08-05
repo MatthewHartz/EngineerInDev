@@ -1,7 +1,8 @@
 ﻿var app = angular.module('engineerBlog', [
     'ngRoute',
     'textAngular',
-    'angularUtils.directives.dirDisqus'
+    'angularUtils.directives.dirDisqus',
+    //'highlightFilter'
 ]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {

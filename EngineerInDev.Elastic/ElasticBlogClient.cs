@@ -24,7 +24,7 @@ namespace EngineerInDev.Elastic
 
         Blog GetLatestBlog();
         Blog GetBlog(string name);
-        List<Blog> SearchBlogs(string searchText);
+        List<BlogMatch> SearchBlogs(string searchText);
         List<Blog> GetAllBlogs();
     }
 
@@ -67,7 +67,7 @@ namespace EngineerInDev.Elastic
                         .CreatedOn).Take(1));
                 return result.Documents.First();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -87,15 +87,68 @@ namespace EngineerInDev.Elastic
                             .Query(name))));
                 return result.Documents.First();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
         }
 
-        public List<Blog> SearchBlogs(string searchText)
+        public List<BlogMatch> SearchBlogs(string searchText)
         {
-            return new List<Blog>();
+            var client = GetClient();
+
+            try
+            {
+                var result = client
+                    .Search<Blog>(s => s
+                        .From(0)
+                        .Size(10)
+                        .Query(q => q
+                            .QueryString(qs => qs
+                                //.OnFields(e => e.Content, e => e.Title, e => e.Tags)
+                                .OnFieldsWithBoost(b =>
+                                    b.Add(f => f.Title, 10.0)
+                                     .Add(f => f.Tags, 5.0)
+                                     .Add(f => f.Content, 1.0))
+                                .Query(searchText)
+                            )
+                        )
+                        .Highlight(h => h
+                            .OnFields(f => f
+                                .OnField("*")
+                                .PreTags("<b>")
+                                .PostTags("</b>")
+                            )
+                        )
+                    );
+
+                var matches = new List<BlogMatch>();
+
+                // sort the hits by score
+
+                // Iterate over each hit
+                foreach (var hit in result.Hits.OrderByDescending(x => x.Score).Select((value, i) => new {i, value}))
+                {
+                    // highlightKeyPairs is a list of guid -> [blog section -> highlight]
+                    var match = new BlogMatch()
+                    {
+                        Blog = hit.value.Source,
+                        Highlights = hit.value.Highlights
+                        .Select(x => new BlogHighlightSection()
+                        {
+                            Section = x.Key,
+                            Data = x.Value.Highlights.ToList()
+                        }).ToList()
+                    };
+                    matches.Add(match);
+                }
+
+                return matches;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public List<Blog> GetAllBlogs()
@@ -108,7 +161,7 @@ namespace EngineerInDev.Elastic
                     .Search<Blog>(s => s.Query(q => q.MatchAll()));
                 return result.Documents.ToList();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }

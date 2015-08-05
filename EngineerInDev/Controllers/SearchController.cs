@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace EngineerInDev.Controllers
 {
-    public class BlogsController : Controller
+    public class SearchController : Controller
     {
-        // GET: Blogs
-        public ActionResult Index(string name)
+        // GET: Search
+        public ActionResult Index()
         {
             return View();
         }

@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="ElasticBlogClient.cs" />
     <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\BlogHighlightSection.cs" />
+    <Compile Include="Models\BlogMatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

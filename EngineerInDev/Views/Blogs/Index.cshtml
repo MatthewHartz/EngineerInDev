@@ -1,5 +1,17 @@
 ﻿<div ng-controller="BlogCtrl" ng-cloak>
     <h1 class="BlogTitle">{{blog.title}}</h1>
+    <div class="MetaSection">
+        <span class="glyphicon glyphicon-tags" style="margin-right: 10px"></span>
+        <span class="Tag" ng-repeat="tag in blog.tags"
+                          ng-click="search(tag)">
+            {{tag}}
+        </span>
+    </div>
+
+    <div class="MetaSection" style="margin-bottom: 20px">
+        <span class="glyphicon glyphicon-calendar" style="margin-right: 10px"></span>
+        {{blog.createdOn | date}}
+    </div>
 
     <div ng-bind-html="blog.htmlBody"></div>
 

@@ -55,6 +55,7 @@ textarea {
     margin-top: 20px;
     list-style-type: none;
     display: inline-block;
+    margin-left: 160px;
 }
 
 #NavbarOptions > li {
@@ -136,4 +137,58 @@ textarea {
 
 .BlogTitle {
     text-align: center;
+}
+
+.search-box {
+    width: 300px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.search-wrapper {
+    float: right;
+    position: relative;
+    right: 40px;
+    top: 14px;
+    width: 340px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+
+.social-wrapper {
+    float: left;
+    position: relative;
+    left: 40px;
+    top: 14px;
+    width: 200px;
+}
+
+.MetaSection {
+    margin: 5px 0 5px 0;
+}
+
+.Tag {
+    padding: 5px 5px 5px 5px;
+    background-color: #B3E5FC;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.Result {
+    margin: 10px 0 40px 0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    -webkit-transition: background-color .5s linear;
+    transition: background-color .5s linear;
+}
+
+.Result:hover {
+    background-color: #EEEEEE;
 }

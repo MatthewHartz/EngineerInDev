@@ -8,7 +8,7 @@
         <legend>{{year.year}}</legend>
         <ul>
             <li ng-repeat="blog in year.blogs">
-                <a href="/blogs/?name={{blog.title}}">{{blog.title}}</a>
+                <div ng-click="goToBlog(blog.title)">{{blog.title}}</div>
             </li>
         </ul>
     </fieldset>

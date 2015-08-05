@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+
+<div ng-controller="SearchCtrl" ng-cloak>
+    <!-- No results displayed -->
+    <div ng-show="results.length == 0">
+        No results found :(
+    </div>
+    <div ng-repeat="result in results" class="Result">
+        <h3 ng-click="goToBlog(result.blog.title)" style="color: #2196F3; margin: 0">{{result.blog.title}}</h3>
+        <div ng-repeat="highlight in result.highlights">
+            <div class="MetaSection" ng-show="highlight.section === 'tags'">
+                <span class="glyphicon glyphicon-tags" style="margin-right: 10px"></span>
+                <span class="Tag" ng-repeat="tag in highlight.data">
+                    <span ng-bind-html="tag"></span>
+                </span>
+            </div>
+            <div class="MetaSection" ng-show="highlight.section === 'content'">
+                <span ng-repeat="content in highlight.data">
+                    <span ng-bind-html="content"></span>
+                </span>
+            </div>
+            <div class="MetaSection" ng-show="!highlight.section">
+                No content match
+            </div>
+        </div>
+    </div>
+</div>
+
