@@ -3,9 +3,10 @@
         $window.location.href = '/Search?query=' + $scope.searchText;
     }
 
-    $scope.fixNavbar = function () {
+    $scope.fixNavbar = function() {
         if (!$scope.atTop && $scope.atTop != null) {
             return "navibar-fixed";
         }
+        return "";
     }
 }]);

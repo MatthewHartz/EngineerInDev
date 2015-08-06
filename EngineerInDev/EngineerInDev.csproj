@@ -276,6 +276,7 @@
     <Content Include="Views\Past\Index.cshtml" />
     <Content Include="Views\Blogs\Index.cshtml" />
     <Content Include="Views\Search\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\EngineerInDev.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EngineerInDev.Dto\EngineerInDev.Dto.csproj">

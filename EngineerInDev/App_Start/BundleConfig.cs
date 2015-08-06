@@ -8,19 +8,19 @@ namespace EngineerInDev
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Content/Scripts/Controllers")
+            bundles.Add(new ScriptBundle("~/Content/Controllers")
                 .Include("~/Content/Scripts/Controllers/*.js"));
 
-            bundles.Add(new ScriptBundle("~/Content/Scripts/Plugins")
+            bundles.Add(new ScriptBundle("~/Content/Plugins")
                 .IncludeDirectory("~/Content/Scripts/Plugins", "*.js", true));
 
-            bundles.Add(new ScriptBundle("~/Content/Scripts/Directives")
+            bundles.Add(new ScriptBundle("~/Content/Directives")
                 .IncludeDirectory("~/Content/Scripts/Directives", "*.js"));
 
-            bundles.Add(new ScriptBundle("~/Content/Scripts/Filters")
+            bundles.Add(new ScriptBundle("~/Content/Filters")
                 .IncludeDirectory("~/Content/Scripts/Filters", "*.js"));
 
-            bundles.Add(new StyleBundle("~/Content/Css")
+            bundles.Add(new StyleBundle("~/Content/Styles")
                 .IncludeDirectory("~/Content/Css", "*.css", true));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

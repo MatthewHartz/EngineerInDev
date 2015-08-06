@@ -13,21 +13,27 @@
     <script src="https://code.angularjs.org/1.3.11/angular-route.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="~/Content/Scripts/app.js"></script>
-    @Styles.Render("~/Content/Css")
-    @Scripts.Render("~/Content/Scripts/Controllers")
-    @Scripts.Render("~/Content/Scripts/Plugins")
-    @Scripts.Render("~/Content/Scripts/Directives")
-    @Scripts.Render("~/Content/Scripts/Filters")
+    @Styles.Render("~/Content/Styles")
+    @Scripts.Render("~/Content/Controllers")
+    @Scripts.Render("~/Content/Plugins")
+    @Scripts.Render("~/Content/Directives")
+    @Scripts.Render("~/Content/Filters")
 </head>
 <body ng-app="engineerBlog" ng-controller="HeaderCtrl" scroll>
     <div id="banner">
         <div id="header">
             <div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'">
-                <img src="~/Content/Images/Profile.jpg" id="ProfilePic" />
+                <img src="~/Content/Images/Profile.jpg" id="ProfilePic"/>
             </div>
             <h1 id="Title">
                 <a target="_self" href="/">Engineer In Dev</a>
             </h1>
+        </div>
+        <div style="text-align: right; margin-bottom: 20px">
+            <form class="search-wrapper" ng-submit="search()">
+                <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+                <input type="text" ng-model="searchText" class="form-control search-box" placeholder="Search blogs">
+            </form>
         </div>
         <div class="navibar" ng-class="fixNavbar()">
             <div class="social-wrapper">
@@ -42,10 +48,6 @@
                     <li><a target="_self" href="Past">past</a></li>
                 </ul>
             </div>
-            <form class="search-wrapper" ng-submit="search()">
-                <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
-                <input type="text" ng-model="searchText" class="form-control search-box" placeholder="Search blogs">
-            </form>
         </div>
         <div class="navibar-margin" ng-show="!atTop && atTop != null"></div>
         <div id="CopyRight">&copy; @DateTime.Now.Year - Matthew Hartz</div>

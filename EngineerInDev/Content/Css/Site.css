@@ -17,26 +17,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
 #Content {
     padding: 20px;
     height: 100%;
@@ -122,8 +102,6 @@ textarea {
     display: inline-block;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border-radius: 50%;
     z-index: 1000;
 }
@@ -161,7 +139,6 @@ textarea {
     -webkit-transition: all .1s linear;
     -moz-transition: all .1s linear;
     -o-transition: all .1s linear;
-    -ms-transition: all .1s linear;    
     transition: all .1s linear;
     transform: scale(.6,.6);
 
@@ -175,14 +152,12 @@ textarea {
 }
 
 .search-wrapper {
-    float: left;
-    width: calc((100% - 960px)/2);
+    display: inline-block;
     margin: 18px 0 0 0;
 }
 
 .search-box {
     width: 300px;
-    float: right;
     padding-right: 30px;
     display: inline-block;
     color: #424242 !important;
