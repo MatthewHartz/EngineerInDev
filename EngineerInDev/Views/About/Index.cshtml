@@ -1,11 +1,51 @@
 ﻿@{
-    ViewBag.Title = "Aboutme";
+    ViewBag.Title = "EID | About";
 }
 
 <div ng-controller="AboutCtrl" ng-cloak>
-    <h1 class="BlogTitle">{{blog.title}}</h1>
+    <h1 class="BlogTitle">About Me</h1>
 
-    <div ng-bind-html="blog.htmlBody"></div>
+    <h2>Why I Created This Blog</h2>
+    <div>
+        While working at my current job, I would experience difficulties when working with some poorly
+        documented issues online. Some of these issues would come up, time and time again. This cycle
+        would drive me insane. A lot of these issues weren't anything that a PhD professor would need
+        to write his/her thesis on, and I figured I thought this would be a great way to contribute to
+        a community that I rely so heavily on when doing my work. The community that wraps itself around
+        <a href="http://www.stackoverflow.com">Stack Overflow</a> made me want to give back.
+        <br/><br/>
+        This blog is currently intended for people, like myself, who are looking for a solution to a problem
+        they have run into; and HOPEFULLY I have come across it myself and written up a small tutorial/solution
+        on it.
+        <br/><br/>
+        My goal through this project is to not only get some exposure, some experience, but also develop myself
+        as an engineer.
+    </div>
+    <h2>Where I Went to School</h2>
+    <div>
+        I graduated from UCI in 2015 with a degree in Computer Science. Previously I attended Fullerton College
+        which is where I met a handful of friends and professor that got me to find a love/passion for coding.
+        I feel like if I didn't originally attend my junior college and meet the people that I did, I probably
+        would've ended up as a history major or something.
+    </div>
+    <br/>
+    <img src="http://i.imgur.com/RZtZin6.jpg"
+         style="height: 50%; /* Saf3.1+, Chrome */
+                                      width: 50%;"/>
+    <div style="color: grey; font-size: 14px">That's me!</div>
+
+    <h2>What I Do For Fun</h2>
+
+
+    <div>
+        Sometimes...
+    </div>
+    <a href="http://imgur.com/u3lWw"><img src="http://i.imgur.com/u3lWw.gif" title="source: imgur.com" /></a>
+
+    <div>
+        Mostly...
+    </div>
+
 
     <dir-disqus disqus-shortname="EngineerInDev"
                 disqus-identifier="{{ identifier }}"
