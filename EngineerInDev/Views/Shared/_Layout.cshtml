@@ -20,8 +20,8 @@
     @Scripts.Render("~/Content/Scripts/Filters")
 </head>
 <body ng-app="engineerBlog" ng-controller="HeaderCtrl" scroll>
-    <div id="Navbar">
-        <div id="Header">
+    <div id="banner">
+        <div id="header">
             <div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'">
                 <img src="~/Content/Images/Profile.jpg" id="ProfilePic" />
             </div>
@@ -29,39 +29,26 @@
                 <a target="_self" href="/">Engineer In Dev</a>
             </h1>
         </div>
-        <div>
+        <div class="navibar" ng-class="fixNavbar()">
             <div class="social-wrapper">
                 <a class="fa fa-github fa-3x" href="https://github.com/rvbmrdonut"></a>
-                <a class="fa fa-linkedin fa-3x"></a>
-                <a class="fa fa-twitter fa-3x"></a>
+                <a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/profile/view?id=339436721&trk=hp-identity-name"></a>
+                <a class="fa fa-twitter fa-3x" href="https://twitter.com/MatthewVHartz"></a>
             </div>
-            <ul id="NavbarOptions">
-                <li><a target="_self" href="About">about</a></li>
-                <li><a target="_self" href="Contact">contact</a></li>
-                <li><a target="_self" href="Past">past</a></li>
-            </ul>
+            <div class="navibar-options">
+                <ul>
+                    <li><a target="_self" href="About">about</a></li>
+                    <li><a target="_self" href="Contact">contact</a></li>
+                    <li><a target="_self" href="Past">past</a></li>
+                </ul>
+            </div>
             <form class="search-wrapper" ng-submit="search()">
-                <input type="text" ng-model="searchText" class="form-control search-box" placeholder="Search blogs">
                 <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+                <input type="text" ng-model="searchText" class="form-control search-box" placeholder="Search blogs">
             </form>
         </div>
+        <div class="navibar-margin" ng-show="!atTop && atTop != null"></div>
         <div id="CopyRight">&copy; @DateTime.Now.Year - Matthew Hartz</div>
-    </div>
-    <div class="fixed-navbar" ng-show="!atTop && atTop != null" ng-cloak>
-        <div class="social-wrapper">
-            <a class="fa fa-github fa-3x" href="https://github.com/rvbmrdonut"></a>
-            <a class="fa fa-linkedin fa-3x"></a>
-            <a class="fa fa-twitter fa-3x"></a>
-        </div>
-        <ul id="NavbarOptions">
-            <li><a target="_self" href="About">about</a></li>
-            <li><a target="_self" href="Contact">contact</a></li>
-            <li><a target="_self" href="Past">past</a></li>
-        </ul>
-        <form class="search-wrapper" ng-submit="search()">
-            <input type="text" ng-model="searchText" class="form-control search-box" placeholder="Search blogs">
-            <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
-        </form>
     </div>
     <div id="Content">
         @RenderBody()
