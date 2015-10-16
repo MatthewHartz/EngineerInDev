@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineerInDev", "EngineerInDev\EngineerInDev.csproj", "{107FEA7F-21BC-45C5-9938-5DEF9CB8D192}"
 EndProject
@@ -20,6 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{328C11
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Posts", "Posts", "{E91159B0-BDEF-44E2-AFB4-9E2B715E500B}"
+	ProjectSection(SolutionItems) = preProject
+		First_Post_10_15_2015.md = First_Post_10_15_2015.md
 	EndProjectSection
 EndProject
 Global
