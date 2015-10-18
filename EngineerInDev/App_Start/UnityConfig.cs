@@ -2,6 +2,7 @@ using System.Web.Http.Dependencies;
 using EngineerInDev.Elastic;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
+using EngineerInDev.DataAccess;
 using Unity.WebApi;
 
 namespace EngineerInDev
@@ -17,7 +18,8 @@ namespace EngineerInDev
             
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IElasticBlogClient, ElasticBlogClient>();
-            
+            container.RegisterType<IDataAccessHelper, GithubAccessHelper>();
+
             GlobalConfiguration.Configuration.DependencyResolver = (IDependencyResolver)new UnityDependencyResolver(container);
         }
     }

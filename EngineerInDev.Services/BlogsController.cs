@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 using AutoMapper;
+using EngineerInDev.DataAccess;
 using EngineerInDev.Dto;
 using EngineerInDev.Elastic;
 using EngineerInDev.Elastic.Models;
@@ -17,9 +18,12 @@ namespace EngineerInDev.Services
     public class BlogsController : ApiController
     {
         private IElasticBlogClient _client;
-        public BlogsController(IElasticBlogClient client)
+        private IDataAccessHelper _helper;
+
+        public BlogsController(IElasticBlogClient client, IDataAccessHelper helper)
         {
             _client = client;
+            _helper = helper;
         }
 
         /// <summary>
@@ -28,22 +32,25 @@ namespace EngineerInDev.Services
         /// <returns></returns>
         [Route("blogs/archive")]
         [HttpGet]
-        public List<object> GetArchivedBlogs()
+        public List<BlogDto> GetArchivedBlogs()
         {
-            // Get first blog
-            var blogs = _client.GetAllBlogs();
+            //// Get first blog
+            //var blogs = _client.GetAllBlogs();
 
-            // group blogs by month and year
-            var calendar = blogs.GroupBy(blog => blog.CreatedOn.Year,
-                                         (key, g) => new
-            {
-                Year = key,
-                Blogs = Mapper.Map<List<BlogDto>>(g.ToList().OrderByDescending(d => d.CreatedOn))
-            })
-            .OrderByDescending(d => d.Year).ToList();
+            //// group blogs by month and year
+            //var calendar = blogs.GroupBy(blog => blog.CreatedOn.Year,
+            //                             (key, g) => new
+            //{
+            //    Year = key,
+            //    Blogs = Mapper.Map<List<BlogDto>>(g.ToList().OrderByDescending(d => d.CreatedOn))
+            //})
+            //.OrderByDescending(d => d.Year).ToList();
 
-            // Perform the conversion
-            return new List<object>(calendar);
+            //// Perform the conversion
+            //return new List<object>(calendar);
+            _helper.GetBlogs();
+
+            return new List<BlogDto>();
         }
 
         /// <summary>
