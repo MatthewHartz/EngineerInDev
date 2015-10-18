@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Helpers;
 using EngineerInDev.Elastic.Models;
 
 namespace EngineerInDev.DataAccess
@@ -39,7 +40,18 @@ namespace EngineerInDev.DataAccess
             client.Headers.Add("user-agent", "Engineer In Dev");
 
             // Get the directories within the Repos directory of the project
-            var content = client.DownloadString(uriBuilder.ToString());
+            var content = Json.Decode(client.DownloadString(uriBuilder.ToString()));
+
+            // Iterate over each directory
+            for (var i = 0; i < content.Length; i++)
+            {
+                var tempBuilder = uriBuilder;
+                tempBuilder.
+                tempBuilder.Fragment = content[i]["name"];
+                var blogs = Json.Decode(client.DownloadString(tempBuilder.ToString()));
+            }
+
+
 
 
 

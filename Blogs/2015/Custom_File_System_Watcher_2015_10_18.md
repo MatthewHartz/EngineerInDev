@@ -22,64 +22,65 @@ To quickly combat this, I wrote a simple FileSystemWatcher that works similar(is
 
 ```C#
 public class CustomFileWatcher
-    {
-        public string _path;
-        public event EventHandler _fileProcessed;
-        public event FileSystemEventHandler Changed;
+{
+	public string _path;
+	public event EventHandler _fileProcessed;
+	public event FileSystemEventHandler Changed;
 
-        public CustomFileWatcher()
-        {
-            _path = ConfigurationManager.AppSettings["logfile"];
-            Changed += OnChanged;
-        }
+	public CustomFileWatcher()
+	{
+		_path = ConfigurationManager.AppSettings["logfile"];
+		Changed += OnChanged;
+	}
 
-        public CancellationTokenSource Run()
-        {
-            var tokenSource = new CancellationTokenSource();
-            var ct = tokenSource.Token;
+	public CancellationTokenSource Run()
+	{
+		var tokenSource = new CancellationTokenSource();
+		var ct = tokenSource.Token;
 
-            // Get current status of the file
-            var sha1 = HashAlgorithm.Create();
-            byte[] hash;
-            byte[] tempHash;
+		// Get current status of the file
+		var sha1 = HashAlgorithm.Create();
+		byte[] hash;
+		byte[] tempHash;
 
-            //var fullfiledata = new FileStream(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-            using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-                hash = sha1.ComputeHash(stream);
+		//var fullfiledata = new FileStream(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+		using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+			hash = sha1.ComputeHash(stream);
 
-            var task = Task.Factory.StartNew(() =>
-            {
-                // Poll file for changes
-                while (!ct.IsCancellationRequested)
-                {
-                    using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-                        tempHash = sha1.ComputeHash(stream);
+		var task = Task.Factory.StartNew(() =>
+		{
+			// Poll file for changes
+			while (!ct.IsCancellationRequested)
+			{
+				using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+					tempHash = sha1.ComputeHash(stream);
 
-                    if (!hash.SequenceEqual(tempHash))
-                    {
-                        hash = tempHash;
-                        Changed.Invoke(null, 
-                            new FileSystemEventArgs(WatcherChangeTypes.Changed,
-                                Path.GetDirectoryName(_path),
-                                Path.GetFileName(_path)));
-                    }
-                    Thread.Sleep(50);
-                }
-                
-            }, tokenSource.Token);
+				if (!hash.SequenceEqual(tempHash))
+				{
+					hash = tempHash;
+					Changed.Invoke(null, 
+						new FileSystemEventArgs(WatcherChangeTypes.Changed,
+							Path.GetDirectoryName(_path),
+							Path.GetFileName(_path)));
+				}
+				Thread.Sleep(50);
+			}
+			
+		}, tokenSource.Token);
 
-            return tokenSource;
-        }
+		return tokenSource;
+	}
 
-        public void Stop(CancellationTokenSource token)
-        {
-            token.Cancel();
-        }
-		
-		private void OnChanged(object source, FileSystemEventArgs e)
-        {
-			// Whatever the heck you want it to do
-        }
+	public void Stop(CancellationTokenSource token)
+	{
+		token.Cancel();
+	}
+	
+	private void OnChanged(object source, FileSystemEventArgs e)
+	{
+		// Whatever the heck you want it to do
+	}
+}
 ```
 
 
